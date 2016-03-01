@@ -1,0 +1,84 @@
+body {
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+a, a:hover, a:visited, a:active, a:focus {
+    text-decoration: none;
+}
+
+table thead {
+    background-color: #efefef;
+}
+
+table>thead>tr>th {
+    border:1px solid #fff;
+    text-align: center;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th  {
+    border-top: 0;
+    padding: 10px 8px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+tr {
+    > td {
+        &:nth-child(1) { //rowNumb
+            font-weight: bold;
+            text-align: center;
+            width: 5%;
+        }
+        &:nth-child(2) { //View
+            font-weight: bold;
+            text-align: center;
+            width: 5%;
+            i {
+                cursor: pointer;
+            }
+        }
+        &:nth-child(3) { //Token
+            text-align: center;
+            width: 5%;
+        }
+        &:nth-child(4) { //Time
+            text-align: left;
+            width: 12%;
+        }
+        &:nth-child(5) { //Method
+            text-align: left;
+            text-align: center;
+        }
+        &:nth-child(6) { //URL
+            text-align: left;
+        }
+        &:nth-child(7) { //RemoteAddr
+            text-align: center;
+        }
+        &:nth-child(8) { //ParentToken
+            text-align: center;
+        }
+    }
+    i.resec-icon.icon-trash {
+        cursor: pointer;
+    }
+}
+
+div.profiler-configuration {
+    float: left;
+    label {
+        display: inline-block;
+    }
+    input {
+        display: inline-block;
+        width: 500px;
+        margin-left: 10px;
+    }
+}

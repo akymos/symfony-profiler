@@ -1,0 +1,9 @@
+*.swo
+*.swp
+node_modules/
+bower_components/
+.serve/
+dist/
+release/
+/npm-debug.log
+.idea/
